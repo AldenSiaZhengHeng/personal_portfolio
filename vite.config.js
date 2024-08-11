@@ -1,15 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  css: {
-    modules: {
-      localsConvention: "camelCase",
-    },
-  },
+  base: '/personal_portfolio/',  // Set this to your repository name
   build: {
-    outDir: 'build',  // Set the output directory to 'build'
+    outDir: 'build',
   },
 })
