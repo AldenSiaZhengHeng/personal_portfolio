@@ -7,6 +7,9 @@ export default defineConfig({
   css: {
     modules: {
       localsConvention: "camelCase",
-    }
-  }
+    },
+  },
+  build: {
+    outDir: 'build',  // Set the output directory to 'build'
+  },
 })
